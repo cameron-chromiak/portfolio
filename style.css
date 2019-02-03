@@ -1,4 +1,28 @@
-
+.git-link{
+  position: fixed;
+  top: 10vh;
+  /* margin-left: -70px; */
+  height: 30px;
+  width: 70px;
+  background: red;
+}
+.projects-card{
+  width: 80vw;
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 1em;
+  max-width: 300px;
+}
+.projects-card>img{
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.div-projects{
+  display: grid;
+  width: 80vw;
+  margin: 10vh auto;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
 .div-stack-right{
   background: lightblue;
   opacity: .4;
@@ -30,9 +54,7 @@
   margin-left: 10vw;
 }
 .container{
-  width: 80vw;
-  margin: 0 auto 10vh auto;
-  background: lightgrey;
+  width: 100vw;
 }
 .hero{
   background-image: url('bg-edit.png');
@@ -47,6 +69,9 @@
 }
 .ff-sans-sequel{
   font-family: 'Sequel Sans';
+}
+ul>li{
+  list-style: none;
 }
 li{
   font-family: 'Superclarendon Regular' ;
