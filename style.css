@@ -1,0 +1,67 @@
+
+.div-stack-right{
+  background: lightblue;
+  opacity: .4;
+  flex: 40%;
+  padding: 10px
+}
+.div-stack-left::after {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.div-stack-left:hover{
+  background-color: lightblue;
+  opacity: 1;
+  box-shadow: 1px 2px rgba(0,0,0,0.15);
+  transition: 0.3s ease-in-out;
+}
+.div-stack-left{
+  background: lightblue;
+  opacity: .9;
+  flex: 60% 1 1;
+  padding: 10px
+}
+
+.div-stack{
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  margin-left: 10vw;
+}
+.container{
+  width: 80vw;
+  margin: 0 auto 10vh auto;
+  background: lightgrey;
+}
+.hero{
+  background-image: url('bg-edit.png');
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-attachment: fixed;
+}
+.ff-sans-sequel{
+  font-family: 'Sequel Sans';
+}
+li{
+  font-family: 'Superclarendon Regular' ;
+}
+.ff-sans-roman
+@font-face {
+  font-family: Superclarendon Regular;
+  src: url('fonts/Superclarendon Regular.ttf');
+}
+@@font-face {
+  font-family: Sequel Sans;
+  src: url('fonts/Sequel Sans Roman Head.otf');
+}
+*{
+  /* font-family: 'Sequel Sans', 'Superclarendon Regular'; */
+  margin: 0;
+  padding: 0;
+}
