@@ -1,9 +1,24 @@
+
+.toggle{
+  height: 50px;
+  width: 50px;
+  background: grey;
+  position: fixed;
+  left: 0;
+  top: 10px;
+}
+.fa{
+  padding: 20px 0;
+}
 .link-overlay{
   position: fixed;
   top: 10vh;
-  /* margin-left: -70px; */
-  width: 10px;
-  background: red;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+}
+.hide{
+  display: none;
 }
 .link-overlay>a{
   z-index: -99
@@ -23,6 +38,7 @@
   display: grid;
   width: 80vw;
   margin: 10vh auto;
+  align-content: center;
 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .div-stack-right{
@@ -43,7 +59,7 @@ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   transition: 0.3s ease-in-out;
 }
 .div-stack-left{
-  background: lightblue;
+  border: 1px solid lightblue;
   opacity: .9;
   flex: 60% 1 1;
   padding: 10px

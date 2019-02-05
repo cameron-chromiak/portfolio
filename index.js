@@ -1,3 +1,3 @@
-$('.link-overlay').click(function(){
-  alert()
-})
+$('.toggle').click(function(){
+  $('.link-overlay').toggleClass('hide')
+});
