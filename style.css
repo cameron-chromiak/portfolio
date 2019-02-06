@@ -1,11 +1,9 @@
 
 .toggle{
-  height: 50px;
-  width: 50px;
-  background: grey;
   position: fixed;
   left: 0;
-  top: 10px;
+  top: -10px;
+  padding: 0;
 }
 .fa{
   padding: 20px 0;
@@ -13,12 +11,12 @@
 .link-overlay{
   position: fixed;
   top: 10vh;
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 0 2em;
 }
 .hide{
-  display: none;
+  display: flex;
 }
 .link-overlay>a{
   z-index: -99
@@ -36,6 +34,7 @@
 }
 .div-projects{
   display: grid;
+  text-align: center;
   width: 80vw;
   margin: 10vh auto;
   align-content: center;
