@@ -40,52 +40,62 @@
   align-content: center;
 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
-.div-stack-right{
-  background: lightblue;
-  opacity: .4;
-  flex: 40%;
-  padding: 10px
+.stack-right{
+  width: 50vw;
+  background: #0984e3;
+  height: 70%;
 }
-.div-stack-left::after {
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  opacity: 0;
-  transition: 0.3s ease-in-out;
+.stack-list-items>li{
+  padding-top: .5rem;
+  font-family: 'Sequel Sans'
 }
-.div-stack-left:hover{
-  background-color: lightblue;
-  opacity: 1;
-  box-shadow: 1px 2px rgba(0,0,0,0.15);
-  transition: 0.3s ease-in-out;
+.stack-skills>h3{
+  padding-bottom: .5rem;
 }
-.div-stack-left{
-  border: 1px solid lightblue;
-  opacity: .9;
-  flex: 60% 1 1;
-  padding: 10px
+.stack-skills{
+  padding: 2rem 0 0 2rem;
+  height: 100%;
+  width: 50%;
+  background: #74b9ff;
 }
-
 .div-stack{
+  padding: .5rem;
+  height: 50vh;
   display: flex;
   flex-direction: row;
-  max-width: 600px;
-  margin-left: 10vw;
+
 }
 .container{
   width: 100vw;
 }
+.hero-about{
+  font-size: 1.2rem;
+  padding: 5rem 2rem;
+}
+.hero-name{
+  font-size: 3rem;
+}
 .hero{
-  background-image: url('bg-edit.png');
-  background-position: top;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 150vh;
-  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background-color: #dfe6e9;
+  color: #0984e3;
   display: flex;
   flex-direction: column;
-  background-attachment: fixed;
+  align-items: center;
+  padding-top: 10vh;
 }
 .ff-sans-sequel{
   font-family: 'Sequel Sans';
+}
+.ff-super{
+  font-family: 'Superclarendon Regular';
+}
+hr{
+  background: #74b9ff;
+  height: 0;
+  border: 1px solid #74b9ff;
+  margin-top: 5rem;
 }
 a{
   color: black;
@@ -97,18 +107,23 @@ ul>li{
 li{
   font-family: 'Superclarendon Regular' ;
 }
-.ff-sans-roman
+
 @font-face {
   font-family: Superclarendon Regular;
   src: url('fonts/Superclarendon Regular.ttf');
 }
-@@font-face {
+@font-face {
   font-family: Sequel Sans;
   src: url('fonts/Sequel Sans Roman Head.otf');
+}
+html{
+  font-size: 12px;
 }
 *{
   /* font-family: 'Sequel Sans', 'Superclarendon Regular'; */
   margin: 0;
   padding: 0;
   touch-action: none;
+}
+@media only screen and (min-width: 768px) {
 }
