@@ -32,19 +32,13 @@
   width: 100%;
   /* border: 1px solid black; */
 }
+
 .div-projects{
+  margin-left: 15vw;
   display: grid;
-  text-align: center;
-  width: 80vw;
-  margin: 10vh auto;
-  align-content: center;
-grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
-.stack-right{
-  width: 50vw;
-  background: #0984e3;
-  height: 70%;
-}
+
 .stack-list-items>li{
   padding-top: .5rem;
   font-family: 'Sequel Sans'
@@ -53,14 +47,13 @@ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   padding-bottom: .5rem;
 }
 .stack-skills{
-  padding: 2rem 0 0 2rem;
+  padding: 2rem 0 2rem 2rem;
   height: 100%;
   width: 50%;
   background: #74b9ff;
 }
 .div-stack{
-  padding: .5rem;
-  height: 50vh;
+  height: auto;
   display: flex;
   flex-direction: row;
 
@@ -74,12 +67,12 @@ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .hero-name{
   font-size: 3rem;
+  letter-spacing: 0.5rem;
 }
 .hero{
   width: 100%;
   height: 100vh;
-  background-color: #dfe6e9;
-  color: #0984e3;
+  background-color: #f5f6fa;
   display: flex;
   flex-direction: column;
   align-items: center;
